@@ -1,13 +1,32 @@
+/* IMPORTACIONES */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* GENERALES */
 * {
     box-sizing: border-box;
 }
 body {
-    margin: 0
+    font-family: 'Open Sans', sans-serif;
 }
-img {
-    display:block;
-    width:100%;
+
+/* OVERRIDE EL TEXTAREA DE BOOTSTRAP PARA EL SEARCH */
+@media (max-width: 767px){
+    .text_area{
+        display: inline-block;
+        width: calc(100% - 42px)!important;
+        vertical-align: middle;1
+    }
+} 
+
+/* Listas */
+ul.nolist {
+    list-style-type: none;
 }
+
+
+
+/* Los que habían */
+
 .main-header {
     padding: 0 20px;
 }
@@ -43,22 +62,12 @@ img {
     display: block;
     padding: 10px;
 }
-ul,ol{
-    list-style: none;
-}
-
-body {
-    font-family: Open sans;
-}
 
 .slideshow{
     width: 100%;
     position: relative;
 }
 
-.slider li, ul{
-    width: 100%;
-}
 
 .slider li{
     overflow: hidden;
