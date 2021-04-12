@@ -60,6 +60,10 @@ body {
     width: 100%;
 }
 
+.slider li{
+    overflow: hidden;
+}
+
 .slider li img{
     width: 100%;
 }
@@ -114,6 +118,8 @@ body {
     align-items: center;
 
     font-size: 35px;
+    z-index: 2;
+    cursor: pointer;
 }
 
 .left{
@@ -122,4 +128,26 @@ body {
 
 .right{
     right: 10px;
+}
+
+@media screen and (max-width: 600px){
+    .slider .caption p{
+        display: none;
+    }
+
+    .slider .caption h1{
+        font-size: 35px;
+    }
+
+    .left, .right{
+        font-size: 30px;
+    }
+
+    .slider li img{
+        width: 600px;
+    }
+
+    .pagination{
+        display: none;
+    }
 }
