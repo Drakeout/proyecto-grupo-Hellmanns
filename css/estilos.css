@@ -26,6 +26,21 @@ ul.nolist {
 }
 
 
+/* Altura mínima página */
+.main-body {
+    height: 1000px;
+}
+
+.footer-hr {
+    border-top: 1px solid DarkGray;
+}
+
+/* Tamaño iconos footer */
+.main-footer .fab {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
 
 /* Los que habían */
 
