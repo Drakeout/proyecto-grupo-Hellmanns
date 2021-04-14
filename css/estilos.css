@@ -10,7 +10,7 @@ body {
 }
 
 /* OVERRIDE EL TEXTAREA DE BOOTSTRAP PARA EL SEARCH */
-@media (max-width: 767px){
+@media (max-width: 991px){
     .text_area{
         display: inline-block;
         width: calc(100% - 42px)!important;
