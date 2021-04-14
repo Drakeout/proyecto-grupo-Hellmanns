@@ -219,6 +219,17 @@ ul.nolist {
     text-decoration: none;
 }
 
+.fa-plus-square{
+    font-size: 20px;
+}
 
+.catalogo{
+    max-width: 240px; 
+}
 
+@media screen and (max-width: 768px) {
+    .catalogo{
+        max-width: none;
+    }
+}
 
