@@ -209,6 +209,16 @@ ul.nolist {
     object-fit: cover;
 }
 
+.linkCatalogo{
+    color: inherit;
+    
+}
+
+.linkCatalogo:hover{
+    color: inherit;
+    text-decoration: none;
+}
+
 
 
 
