@@ -230,7 +230,7 @@ ul.nolist {
 
 @media screen and (max-width: 768px) {
     .catalogo{
-        max-width: none;
+        max-width: auto;
         
     }
 }
