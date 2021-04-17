@@ -209,7 +209,7 @@ ul.nolist {
     object-fit: cover;
 }
 
-.linkCatalogo{
+.linkCatalogo, .entrega{
     color: inherit;
     
 }
@@ -217,6 +217,15 @@ ul.nolist {
 .linkCatalogo:hover{
     color: inherit;
     text-decoration: none;
+}
+
+.producto{
+    color: inherit;
+}
+
+.producto:hover{
+    color: inherit;
+    text-decoration: none ;
 }
 
 .fa-plus-square{
