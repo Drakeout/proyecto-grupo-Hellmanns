@@ -209,7 +209,7 @@ ul.nolist {
     object-fit: cover;
 }
 
-.linkCatalogo{
+.linkCatalogo, .entrega{
     color: inherit;
     
 }
