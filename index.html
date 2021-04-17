@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Fuerza a IE 8/9/10 a usar su último motor de renderizado -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ChangeWear</title>
+    <title>Home | ChangeWear</title>
     <meta name="description" content="Sitio de venta online (Beta)">
     <link rel="icon" href="img/cwIcon.png" type="image/png">
     <!-- FontAwesome -->
@@ -41,35 +41,16 @@
                         <a class="nav-link" href="index.html">Inicio<span class="sr-only">(actual)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/mujeres.html">Mujeres</a>
+                        <a class="nav-link" href="mujeres.html">Mujeres</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/hombre.html">Hombres</a>
+                        <a class="nav-link" href="hombres.html">Hombres</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/ninos.html">Niños</a>
-                    </li>
-                    <!-- Botón del usuario 1 -->
-                    <li class="nav-item d-lg-none">
-                        <a class="nav-link" href="pages/registroUsuario.html">
-                            <i class="fas fa-user"></i> Usuario
-                        </a>
-                    </li>
-                    <!-- Botón del carro de compras 1 -->
-                    <li class="nav-item dropdown d-lg-none">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            <i class="fas fa-shopping-cart"></i> Carro de compra
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="#">Item 1</a>
-                            <a class="dropdown-item" href="#">Item 2</a>
-                            <a class="dropdown-item" href="#">Item 3</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="pages/carro.html"><small>Carro</small></a>
-                        </div>
+                        <a class="nav-link" href="ninos.html">Niños</a>
                     </li>
                 </ul>
+                <!--Barra de busqueda -->
                 <form class="form-inline my-0 mr-0 nav-item">
                     <input class="form-control mr-0 text_area" type="search" placeholder="Buscar" aria-label="Buscar">
                     <button class="btn btn-outline-success my-1 my-md-0" type="submit"><i
@@ -77,7 +58,7 @@
                 </form>
                 <!-- Botón de Usuario -->
                 <div class="btn-group dropdown ml-2 d-none d-lg-block">
-                    <a class="btn btn-info" href="pages/registroUsuario.html">
+                    <a class="btn btn-info" href="registroUsuario.html">
                         <i class="fas fa-user"></i>
                     </a>
                 </div>
@@ -92,7 +73,7 @@
                         <a class="dropdown-item" href="#">Item 2</a>
                         <a class="dropdown-item" href="#">Item 3</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="pages/carro.html"><small>Carro</small></a>
+                        <a class="dropdown-item" href="carro.html">Ver carro</a>
                     </div>
                 </div>
             </div>
@@ -150,9 +131,21 @@
                 <div class="row">
                     <div class="col-sm">
                         <div class="card bg-dark text-white catalogo" >
+                            <img src="img/hombre.jpg" class="card-img" alt="">
+                            <div class="card-img-overlay">
+                                <a href="hombres.html" class="linkCatalogo stretched-link">
+                                    <h1 class="card-text ">
+                                        Hombre
+                                    </h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card bg-dark text-white catalogo" >
                             <img src="img/mujer.jpg" class="card-img" alt="">
                             <div class="card-img-overlay">
-                                <a href="pages/mujeres.html" class="linkCatalogo stretched-link">
+                                <a href="mujeres.html" class="linkCatalogo stretched-link">
                                     <h1 class="card-text">
                                         Mujer
                                     </h1>
@@ -162,22 +155,9 @@
                     </div>
                     <div class="col-sm">
                         <div class="card bg-dark text-white catalogo" >
-                            <img src="img/hombre.jpg" class="card-img" alt="">
-                            <div class="card-img-overlay">
-                                <a href="pages/hombre.html" class="linkCatalogo stretched-link">
-                                    <h1 class="card-text ">
-                                        Hombre
-                                    </h1>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-sm">
-                        <div class="card bg-dark text-white catalogo" >
                             <img src="img/ninos.jpg" class="card-img" alt="">
                             <div class="card-img-overlay">
-                                <a href="pages/ninos.html" class="linkCatalogo stretched-link">
+                                <a href="ninos.html" class="linkCatalogo stretched-link">
                                     <h1 class="card-text ">
                                         Niños
                                     </h1>
@@ -223,7 +203,7 @@
                                                     <p class="card-text">Parte de nuestra nueva colección Red</p>
                                                 </div>
                                                 <div class="card-footer">
-                                                    <a href="">
+                                                    <a href="producto.html">
                                                         <div class="d-flex justify-content-between">
                                                             <small>Añadir</small>
                                                             <i class="fas fa-plus-square"></i>
@@ -243,7 +223,7 @@
                                                     
                                                 </div>
                                                 <div class="card-footer">
-                                                    <a href="">
+                                                    <a href="producto.html">
                                                         <div class="d-flex justify-content-between">
                                                             <small>Añadir</small>
                                                             <i class="fas fa-plus-square"></i>
@@ -262,7 +242,7 @@
 
                                                 </div>
                                                 <div class="card-footer">
-                                                    <a href="">
+                                                    <a href="producto.html">
                                                         <div class="d-flex justify-content-between">
                                                             <small>Añadir</small>
                                                             <i class="fas fa-plus-square"></i>
@@ -287,7 +267,7 @@
 
                                                 </div>
                                                 <div class="card-footer">
-                                                    <a href="">
+                                                    <a href="producto.html">
                                                         <div class="d-flex justify-content-between">
                                                             <small>Añadir</small>
                                                             <i class="fas fa-plus-square"></i>
@@ -307,7 +287,7 @@
 
                                                 </div>
                                                 <div class="card-footer">
-                                                    <a href="">
+                                                    <a href="producto.html">
                                                         <div class="d-flex justify-content-between">
                                                             <small>Añadir</small>
                                                             <i class="fas fa-plus-square"></i>
@@ -326,7 +306,7 @@
 
                                                 </div>
                                                 <div class="card-footer">
-                                                    <a href="">
+                                                    <a href="producto.html">
                                                         <div class="d-flex justify-content-between">
                                                             <small>Añadir</small>
                                                             <i class="fas fa-plus-square"></i>
@@ -345,8 +325,6 @@
                 </div>
             </div>
         </section>
-
-
     </main>
 
     <!-- Aquí va el footer -->
@@ -395,5 +373,4 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
