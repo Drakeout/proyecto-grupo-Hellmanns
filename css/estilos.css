@@ -362,7 +362,7 @@ button{
   border-color: #000000; 
   border-style: solid; 
   border-radius: 10px;  
-  width: 420px;   
+  /*width: 420px;  el boton de busqueda se hace grande          */ 
   cursor: pointer;
 }
 
