@@ -32,44 +32,40 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Marca de la página -->
-            <a class="navbar-brand ml-2 ml-lg-0 mr-auto mr-lg-2" href="../index.html">ChangeWear</a>
+            <a class="navbar-brand ml-2 ml-lg-0 mr-auto mr-lg-2" href="../index.html">ChangeWear<span
+                    class="sr-only">(actual)</span></a>
             <!-- Los items del Navbar -->
             <div class="collapse navbar-collapse" id="navbarTogglerMain">
                 <ul class="navbar-nav mr-auto mt-1 mt-lg-0">
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a class="nav-link" href="mujeres.html">Mujeres</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a class="nav-link" href="hombre.html">Hombres</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="ninos.html">Niños</a>
                     </li>
-                    <!-- Botón del usuario 1 -->
-                    <li class="nav-item d-lg-none">
-                        <a class="nav-link" href="login.html">
-                            <i class="fas fa-user"></i> Usuario
+
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+                <ul class="navbar-nav mt-1 mt-lg-0">
+                    <li class="nav-item my-2 ml-lg-2">
+                        <a class="btn btn-danger" href="carro.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item my-2 ml-lg-2">
+                        <a class="btn btn-info" href="registroUsuario.html">
+                            <i class="fas fa-user"></i>
                         </a>
                     </li>
                 </ul>
-                <!--Barra de busqueda -->
-                <form class="form-inline my-0 mr-0 nav-item">
-                    <input class="form-control mr-0 text_area" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="btn btn-outline-success my-1 my-md-0" type="submit"><i
-                            class="fas fa-search"></i></button>
-                </form>
-                <!-- Botón de Usuario -->
-                <div class="btn-group dropdown ml-2 d-none d-lg-block">
-                    <a class="btn btn-info" href="registroUsuario.html">
-                        <i class="fas fa-user"></i>
-                    </a>
-                </div>
-                <!-- Botón del carro de compras 2-->
-                <div class="btn-group dropdown ml-2 d-none d-lg-block">
-                    <a class="btn btn-danger" href="carro.html">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-                </div>
+
             </div>
         </nav>
     </header>
