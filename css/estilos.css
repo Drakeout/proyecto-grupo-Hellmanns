@@ -292,6 +292,11 @@ ul.nolist {
   object-fit: cover;
 }
 
+.card-text{
+  color: white;
+  text-shadow:2px 2px 5px black;
+}
+
 .linkCatalogo,
 .entrega {
   color: inherit;
