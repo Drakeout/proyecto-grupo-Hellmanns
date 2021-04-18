@@ -26,7 +26,7 @@ body {
   font-size: 20px;
 }
 .pa {
-  height: 40px;
+  height: 30px;
   text-align: left;
   border-bottom: 1px solid;
 }
@@ -324,3 +324,20 @@ ul.nolist {
     max-width: none;
   }
 }
+
+
+.img-us {
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 769px) {
+  .img-us{
+    height: 35vw;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+
