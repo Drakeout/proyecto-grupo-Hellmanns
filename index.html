@@ -66,29 +66,31 @@
             </li>
           </ul>
           <!--Barra de busqueda -->
-          <form class="form-inline my-0 mr-0 nav-item">
+          <form class="form-inline my-0 mr-2 nav-item">
             <input
               class="form-control mr-0 text_area"
               type="search"
               placeholder="Buscar"
               aria-label="Buscar"
             />
-            <button class="btn btn-outline-success my-1 my-md-0" type="submit">
+            <button class="btn btn-outline-success my-0" type="submit">
               <i class="fas fa-search"></i>
             </button>
           </form>
-          <!-- Botón de Usuario -->
-          <div class="btn-group dropdown ml-2 d-none d-lg-block">
-            <a class="btn btn-info" href="pages/login.html">
-              <i class="fas fa-user"></i>
-            </a>
-          </div>
-          <!-- Botón del carro de compras 2-->
-          <div class="btn-group dropdown ml-2 d-none d-lg-block">
-            <a class="btn btn-danger" href="pages/carro.html">
-              <i class="fas fa-shopping-cart"></i>
-            </a>
-          </div>
+          <!--Botón de iniciar sesión-->
+          <ul class="navbar-nav my-0">
+            <li class="nav-item mr-2">
+              <a class="btn btn-info" href="pages/login.html">
+                <i class="fas fa-user"></i>
+              </a>
+            </li>
+            <!--Botón carro de compra-->
+            <li class="nav-item">
+              <a class="btn btn-danger " href="pages/carro.html">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -394,7 +396,7 @@
           <div class="col-md">
             <h6 class="text-uppercase text-warning">Sobre Nosotros</h6>
             <ul class="mb-0 pb-2">
-              <li>Nuestra Visión</li>
+              <li class="text"><a class="nav-link" href="pages/vision.html">Nuestra Visión</a></li>
               <li>Noticias</li>
               <li>Empleo</li>
             </ul>
