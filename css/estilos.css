@@ -297,6 +297,10 @@ ul.nolist {
   text-shadow:2px 2px 5px black;
 }
 
+.card-text{
+  color: black;
+}
+
 .linkCatalogo,
 .entrega {
   color: inherit;
