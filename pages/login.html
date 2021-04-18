@@ -25,7 +25,7 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
     <!-- Javascript -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
@@ -101,84 +101,49 @@
     <br />
 
     <!-- Formulario -->
-    <main id="main">
-      <section class="section section--account">
-        <div class="container">
-          <div class="h-max-width-1030 mx-auto">
-            <div class="row">
-              <div
-                class="section__column section__column--small-margin col-lg-6"
+    <section class="form-login">
+      <div class="container">
+        <div class="row">
+          <div class="login col-lg-6">
+            <h1>Iniciar sesión</h1>
+            <input
+              class="controls"
+              type="text"
+              name="usuario"
+              value=""
+              placeholder="Usuario"
+            />
+            <input
+              class="controls"
+              type="password"
+              name="contrasena"
+              value=""
+              placeholder="Contraseña"
+            />
+            <input class="buttons" type="submit" name="" value="Ingresar" />
+            <p><a href="#">¿Olvidastes tu Contraseña?</a></p>
+          </div>
+          <div class="new-cli col-lg-6">
+            <div class="info">
+              <h2>Cliente Nuevo</h2>
+              <div class="text">
+                <p>Crear una cuenta tiene muchos beneficios:</p>
+                <p>
+                  Pago más rápido, guardar más de una dirección, ofertas
+                  exclusivas, seguimiento de pedidos y mucho más.
+                </p>
+              </div>
+              <a class="new-acc" href="registroUsuario.html">
+                <button class="buttons" type="button">
+                  Crear una cuenta
+                </button></a
               >
-                <div class="form-box form-box--border form-box--login">
-                  <div class="login-form">
-                    <h1 class="form-box__title title title_xs">
-                      Inicia sesión
-                    </h1>
-                    <form class="form">
-                      <div class="form-fields">
-                        <div class="form-group">
-                          <label for="loginEmail" class="label-title"
-                            >Email*</label
-                          >
-                          <input
-                            type="email"
-                            id="loginEmail"
-                            class="form-control untouched pristine required"
-                          />
-                          <span class="invalid-feedback"></span>
-                        </div>
-                        <div class="form-group">
-                          <label for="loginPassword" class="label-title"
-                            >Contraseña*</label
-                          >
-                          <input
-                            type="password"
-                            id="loginPassword"
-                            class="form-control untouched pristine required"
-                          />
-                          <span class="invalid-feedback"></span>
-                        </div>
-                      </div>
-                      <div class="form-box__actions">
-                        <button
-                          type="submit"
-                          class="button button--secondary button--more"
-                        >
-                          <span class="button__text">Ingresar</span>
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-
-              <div class="section__column col-lg-6">
-                <div class="form-box form-box--border">
-                  <h2 class="form-box__title title title--xs">Cliente Nuevo</h2>
-
-                  <div class="form-box__text h-text">
-                    <p>Crear una cuenta tiene muchos beneficios:</p>
-                    <p>
-                      Pago más rápido, guardar más de una dirección, ofertas
-                      exclusivas, seguimiento de pedidos y mucho más.
-                    </p>
-                  </div>
-
-                  <div class="form-box__actions text-center">
-                    <a
-                      class="button button--secondary"
-                      href="registroUsuario.html"
-                    >
-                      <span class="button__text">Crear una cuenta</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <p class="pa"></p>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
     <br />
     <br />
 
@@ -193,18 +158,32 @@
           <div class="col-md">
             <h6 class="text-uppercase text-warning">Sobre Nosotros</h6>
             <ul class="mb-0 pb-2">
-              <li class="text"><a class="nav-link" href="vision.html">Nuestra Visión</a></li>
-              <li>Noticias</li>
-              <li>Empleo</li>
+              <li class="text">
+                <a class="nav-link" href="vision.html">Nuestra Visión</a>
+              </li>
+              <li class="text">
+                <a class="nav-link" href="#">Noticias</a>
+              </li>
+              <li class="text">
+                <a class="nav-link" href="#">Empleo</a>
+              </li>
             </ul>
           </div>
           <div class="col-md">
             <h6 class="text-uppercase text-warning">Obtener Ayuda</h6>
             <ul class="mb-0 pb-2">
-              <li>Pedidos</li>
-              <li>Cambios y Devoluciones</li>
-              <li>Formas de Pago</li>
-              <li>Comunícate con Nosotros</li>
+              <li class="text">
+                <a class="nav-link" href="#">Pedidos</a>
+              </li>
+              <li class="text">
+                <a class="nav-link" href="#">Cambios y devoluciones</a>
+              </li>
+              <li class="text">
+                <a class="nav-link" href="#">Formas de pago</a>
+              </li>
+              <li class="text">
+                <a class="nav-link" href="#">Contáctanos</a>
+              </li>
             </ul>
           </div>
         </div>
