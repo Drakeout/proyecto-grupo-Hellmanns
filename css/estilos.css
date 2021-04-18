@@ -331,6 +331,11 @@ ul.nolist {
   height: 20vw;
   object-fit: cover;
 }
+.logo {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
 
 @media screen and (max-width: 769px) {
   .img-us{
