@@ -32,7 +32,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Marca de la página -->
-      <a class="navbar-brand ml-2 ml-lg-0 mr-auto mr-lg-2" href="index.html">ChangeWear<span
+      <a class="navbar-brand ml-2 ml-lg-0 mr-auto mr-lg-2" href="index.html">
+        <img src="img/logo.png" class="logo" alt="" />
+        <span
           class="sr-only">(actual)</span></a>
       <!-- Los items del Navbar -->
       <div class="collapse navbar-collapse" id="navbarTogglerMain">
@@ -46,6 +48,26 @@
           <li class="nav-item">
             <a class="nav-link" href="pages/ninos.html">Niños</a>
           </li>
+          <!-- Botón del usuario 1 -->
+          <li class="nav-item d-lg-none">
+              <a class="nav-link" href="registroUsuario.html">
+                  <i class="fas fa-user"></i> Usuario
+              </a>
+          </li>
+          <!-- Botón del carro de compras 1 -->
+          <li class="nav-item dropdown d-lg-none">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <i class="fas fa-shopping-cart"></i> Carro de compra
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="pages/producto.html">Producto 1</a>
+                <a class="dropdown-item" href="pages/producto.html">Producto 2</a>
+                <a class="dropdown-item" href="pages/producto.html">Producto 3</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="pages/carro.html">Ver carro</a>
+              </div>
+          </li>
         </ul>
         <!--Barra de busqueda -->
         <form class="form-inline my-0 mr-0 nav-item">
@@ -54,19 +76,25 @@
             <i class="fas fa-search"></i>
           </button>
         </form>
-        <ul class="navbar-nav mt-1 mt-lg-0 ">
-          <li class="nav-item my-sm-1 mx-lg-2">
+        <!-- Botón de Usuario -->
+        <div class="btn-group dropdown ml-2 d-none d-lg-block">
             <a class="btn btn-info" href="pages/login.html">
-              <i class="fas fa-user"></i>
+                <i class="fas fa-user"></i>
             </a>
-          </li>
-          <li class="nav-item my-sm-1 mx-lg-2">
-            <a class="btn btn-danger" href="pages/carro.html">
-              <i class="fas fa-shopping-cart"></i>
+        </div>
+        <!-- Botón del carro de compras 2-->
+        <div class="btn-group dropdown ml-2 d-none d-lg-block">
+            <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class="fas fa-shopping-cart"></i>
             </a>
-          </li>
-        </ul>
-        
+            <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="pages/producto.html">Producto 1</a>
+                <a class="dropdown-item" href="pages/producto.html">Producto 2</a>
+                <a class="dropdown-item" href="pages/producto.html">Producto 3</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/carro.html">Ver carro</a>
+            </div>
         </div>
       </div>
     </nav>
@@ -301,37 +329,37 @@
   <footer class="bg-dark text-white my-0 mx-0 pt-4 pb-2 main-footer">
     <div class="container">
       <div class="row">
-        <div class="col-md">
-          <img src="img/logo.png" class="logo" alt="" />
+        <div class="col-md" style="text-align: center">
+          <img src="img/logo.png" class="logo pb-4" alt="" />
         </div>
         <div class="col-md">
           <h6 class="text-uppercase text-warning">Sobre Nosotros</h6>
-          <ul class="mb-0 pb-2">
-            <li class="text">
-              <a class="nav-link" href="pages/vision.html">Nuestra Visión</a>
+          <ul class="mb-0 pb-2 foot-list">
+            <li class="">
+              <a class="" href="pages/vision.html">Nuestra Visión</a>
             </li>
-            <li class="text">
-              <a class="nav-link" href="#">Noticias</a>
+            <li class="">
+              <a class="" href="#">Noticias</a>
             </li>
-            <li class="text">
-              <a class="nav-link" href="#">Empleo</a>
+            <li class="">
+              <a class="" href="#">Empleo</a>
             </li>
           </ul>
         </div>
         <div class="col-md">
           <h6 class="text-uppercase text-warning">Obtener Ayuda</h6>
-          <ul class="mb-0 pb-2">
-            <li class="text">
-              <a class="nav-link" href="#">Pedidos</a>
+          <ul class="mb-0 pb-2 foot-list">
+            <li class="">
+              <a class="" href="#">Pedidos</a>
             </li>
-            <li class="text">
-              <a class="nav-link" href="#">Cambios y devoluciones</a>
+            <li class="">
+              <a class="" href="#">Cambios y devoluciones</a>
             </li>
-            <li class="text">
-              <a class="nav-link" href="#">Formas de pago</a>
+            <li class="">
+              <a class="" href="#">Formas de pago</a>
             </li>
-            <li class="text">
-              <a class="nav-link" href="pages/contacto.html">Contáctanos</a>
+            <li class="">
+              <a class="" href="pages/contacto.html">Contáctanos</a>
             </li>
           </ul>
         </div>
