@@ -108,20 +108,9 @@ ul.nolist {
   list-style-type: none;
 }
 
-/* Navbar y footer Logo*/
-.navbar-brand img {
-    height: 30px;
-    width: auto;
-}
-.main-footer .logo {
-    height: auto;
-    width: 90%;
-    max-width: 400px;
-}
-
 /* Altura mínima página */
 .main-body {
-  height: 900px;
+  height: 1000px;
 }
 
 .footer-hr {
@@ -132,15 +121,6 @@ ul.nolist {
 .main-footer .fab {
   font-size: 20px;
   vertical-align: middle;
-}
-
-.foot-list a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.foot-list a:hover {
-    color: cyan;
 }
 
 /* Los que habían */
