@@ -27,7 +27,8 @@
     />
     <link rel="stylesheet" href="../css/estilos.css" />
     <!-- Javascript -->
-    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.16.0/dist/jquery.validate.min.js" crossorigin="anonymous"></script>   
     <script src="../js/main.js"></script>
   </head>
 
@@ -135,7 +136,7 @@
                 scelerisque. Sed volutpat nisl rutrum lobortis lobortis.
                 Curabitur molestie metus eu dolor bibendum congue.
               </p>
-              <div class="row register-form">
+              <form class="row register-form" id="registroUsuario" method="">
                 <!--Formulario Columna 1-->
                 <div class="col-md-6">
                   <div class="form-group">
@@ -144,6 +145,7 @@
                       class="form-control"
                       placeholder="Nombre *"
                       value=""
+                      id="nombre"
                     />
                   </div>
                   <div class="form-group">
@@ -152,6 +154,7 @@
                       class="form-control"
                       placeholder="Apellido *"
                       value=""
+                      id="apellido"
                     />
                   </div>
                   <div class="form-group">
@@ -160,6 +163,7 @@
                       class="form-control"
                       placeholder="Contraseña *"
                       value=""
+                      id="constrasena"
                     />
                   </div>
                   <div class="form-group">
@@ -168,6 +172,7 @@
                       class="form-control"
                       placeholder="Confirmar contraseña *"
                       value=""
+                      id="recontrasena"
                     />
                   </div>
                 </div>
@@ -179,6 +184,7 @@
                       class="form-control"
                       placeholder="Correo electrónico *"
                       value=""
+                      id="correo"
                     />
                   </div>
                   <div class="form-group">
@@ -190,11 +196,12 @@
                       class="form-control"
                       placeholder="Teléfono *"
                       value=""
+                      id="telefono"
                     />
                   </div>
                   <!--Barra de Opciones: Regiones-->
                   <div class="form-group">
-                    <select class="form-control">
+                    <select class="form-control" id="region">
                       <option class="hidden" selected disabled>
                         Seleccione su región
                       </option>
@@ -222,13 +229,14 @@
                       class="form-control"
                       placeholder="Dirección *"
                       value=""
+                      id="direccion"
                     />
                   </div>
                   <!-- Incluir un Pop-up y checkbox para los terminos de servicio, y un captcha? -->
                   <!--Boton de Confirmacion-->
-                  <input type="submit" class="btnRegister" value="Confirmar" />
+                  <input type="submit" class="btnRegister" value="SUBMIT" />
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
