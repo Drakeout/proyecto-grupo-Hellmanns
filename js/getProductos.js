@@ -38,7 +38,10 @@ $(document).ready(() => {
         $(card).html(html);
         $(card).addClass('col mt-3');
         $(card).attr('id', id);
-        
+        $(card).click(() => {
+            sessionStorage.setItem('producto', JSON.stringify(id));
+            location.href = '../pages/producto.html';
+        });
 
         return card;
     }
