@@ -13,6 +13,12 @@
     <title>Mujeres | ChangeWear</title>
     <meta name="description" content="Sitio de venta online (Beta)" />
     <link rel="icon" href="../img/cwIcon.png" type="image/png" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mujeres | ChangeWear</title>
+    <meta name="description" content="Sitio de venta online (Beta)" />
+    <link rel="icon" href="../img/cwIcon.png" type="image/png" />
+
     <!-- FontAwesome -->
     <link
       rel="stylesheet"
@@ -25,15 +31,17 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/estilos.css" />
     <!-- Javascript -->
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>    
+    <script src="../js/getProductos.js"></script>
   </head>
 
   <body>
-    <header class="">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <!-- Toggler del navbar -->
         <button
           class="navbar-toggler"
@@ -50,15 +58,15 @@
         <a
           class="navbar-brand ml-2 ml-lg-0 mr-auto mr-lg-2"
           href="../index.html"
-        >
-          <img src="../img/logo.png" class="logo" alt="" />
-          <span class="sr-only">(actual)</span></a
+          >ChangeWear</a
         >
         <!-- Los items del Navbar -->
         <div class="collapse navbar-collapse" id="navbarTogglerMain">
           <ul class="navbar-nav mr-auto mt-1 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="mujeres.html">Mujeres</a>
+              <a class="nav-link" href="mujeres.html"
+                >Mujeres<span class="sr-only">(actual)</span></a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="hombre.html">Hombres</a>
@@ -66,210 +74,45 @@
             <li class="nav-item">
               <a class="nav-link" href="ninos.html">Niños</a>
             </li>
-            <!-- Botón del usuario 1 -->
-            <li class="nav-item d-lg-none">
-              <a class="nav-link" href="login.html">
-                <i class="fas fa-user"></i> Iniciar sesión
-              </a>
-            </li>
-            <!-- Botón del carro de compras 1 -->
-            <li class="nav-item d-lg-none">
-              <a class="nav-link" href="carro.html">
-                <i class="fas fa-shopping-cart"></i> Carro de compra
-              </a>
-            </li>
           </ul>
           <!--Barra de busqueda -->
-          <form class="form-inline my-0 mr-0 nav-item">
+          <form class="form-inline my-0 mr-2 nav-item">
             <input
               class="form-control mr-0 text_area"
               type="search"
               placeholder="Buscar"
               aria-label="Buscar"
             />
-            <button class="btn btn-outline-success my-1 my-md-0" type="submit">
+            <button class="btn btn-outline-success my-0" type="submit">
               <i class="fas fa-search"></i>
             </button>
           </form>
-          <!-- Botón de Usuario -->
-          <div class="btn-group dropdown ml-2 d-none d-lg-block">
-            <a class="btn btn-info" href="login.html">
-              <i class="fas fa-user"></i>
-            </a>
-          </div>
-          <!-- Botón del carro de compras 2-->
-          <div class="btn-group dropdown ml-2 d-none d-lg-block">
-            <a class="btn btn-danger" href="carro.html">
-              <i class="fas fa-shopping-cart"></i>
-            </a>
-          </div>
+          <!--Botón de iniciar sesión-->
+          <ul class="navbar-nav mt-1 mt-lg-0 ">
+            <li class="nav-item my-sm-1 mx-lg-2">
+              <a class="btn btn-info" href="login.html">
+                <i class="fas fa-user"></i>
+              </a>
+            </li>
+            <li class="nav-item my-sm-1 mx-lg-2">
+              <a class="btn btn-danger" href="carro.html">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
-    <main>
+    <main id="mujer">
       <!-- Main -->
 
-      <section class="pt-5 pb-5">
+      <section class="pt-1 pb-5">
         <!-- PlaceHolder Productos -->
-        <div class="container">
-          <h2 class="display-4 my-4">Mujeres</h2>
-          <div class="row d-flex equal">
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 border-0">
-                <a
-                  href="producto.html"
-                  class="text-decoration-none stretched-link"
-                >
-                  <img
-                    class="card-img-top"
-                    src="../img/seccion_mujeres/ADI-GN6702-1_1024.png"
-                    alt=""
-                  />
-                  <div class="card-body text-center">
-                    <h4 class="card-title">
-                      <a
-                        href="#"
-                        class="font-weight-bold text-dark text-uppercase small"
-                        >Producto</a
-                      >
-                    </h4>
-                    <h5 class="card-price medium text-warning">
-                      <i> $999</i>
-                    </h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 border-0">
-                <a
-                  href="producto.html"
-                  class="text-decoration-none stretched-link"
-                >
-                  <img
-                    class="card-img-top"
-                    src="../img/seccion_mujeres/CZ8530-010-1_1024.png"
-                    alt=""
-                  />
-                  <div class="card-body text-center">
-                    <h4 class="card-title">
-                      <a
-                        href="#"
-                        class="font-weight-bold text-dark text-uppercase small"
-                        >Producto</a
-                      >
-                    </h4>
-                    <h5 class="card-price medium text-warning">
-                      <i> $999</i>
-                    </h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 border-0">
-                <a
-                  href="producto.html"
-                  class="text-decoration-none stretched-link"
-                >
-                  <img
-                    class="card-img-top"
-                    src="../img/seccion_mujeres/CZ8632-010-1_1024.png"
-                    alt=""
-                  />
-                  <div class="card-body text-center">
-                    <h4 class="card-title">
-                      <a
-                        href="#"
-                        class="font-weight-bold text-dark text-uppercase small"
-                        >Producto</a
-                      >
-                    </h4>
-                    <h5 class="card-price medium text-warning">
-                      <i> $999</i>
-                    </h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="row d-flex equal">
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 border-0">
-                <a
-                  href="producto.html"
-                  class="text-decoration-none stretched-link"
-                >
-                  <img
-                    class="card-img-top"
-                    src="../img/seccion_mujeres/CV8481-100-1_1024.png"
-                    alt=""
-                  />
-                  <div class="card-body text-center">
-                    <h4 class="card-title">
-                      <a
-                        href="#"
-                        class="font-weight-bold text-dark text-uppercase small"
-                        >Producto</a
-                      >
-                    </h4>
-                    <h5 class="card-price medium text-warning">
-                      <i> $999</i>
-                    </h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 border-0">
-                <a
-                  href="producto.html"
-                  class="text-decoration-none stretched-link"
-                >
-                  <img
-                    class="card-img-top"
-                    src="../img/seccion_mujeres/DD1869-101-1_1024.png"
-                    alt=""
-                  />
-                  <div class="card-body text-center">
-                    <h4 class="card-title">
-                      <a
-                        href="#"
-                        class="font-weight-bold text-dark text-uppercase small"
-                        >Producto</a
-                      >
-                    </h4>
-                    <h5 class="card-price medium text-warning">
-                      <i> $999</i>
-                    </h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 border-0">
-                <a
-                  href="producto.html"
-                  class="text-decoration-none stretched-link"
-                >
-                  <img
-                    class="card-img-top"
-                    src="../img/seccion_mujeres/SX5277-010-1_1024.png"
-                    alt=""
-                  />
-                  <div class="card-body text-center">
-                    <h4 class="card-title">
-                      <a
-                        href="#"
-                        class="font-weight-bold text-dark text-uppercase small"
-                        >Producto</a
-                      >
-                    </h4>
-                    <h5 class="card-price medium text-warning">
-                      <i> $999</i>
-                    </h5>
-                  </div>
-                </a>
+        <div class="container-fluid px-5">
+          <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1" id="productos">
+            <div class="d-flex justify-content-center">
+              <div class="spinner-border" >
+                <span class="sr-only">Loading...</span>
               </div>
             </div>
           </div>
@@ -281,37 +124,37 @@
     <footer class="bg-dark text-white my-0 mx-0 pt-4 pb-2 main-footer">
       <div class="container">
         <div class="row">
-          <div class="col-md" style="text-align: center">
-            <img src="../img/logo.png" class="logo pb-4" alt="" />
+          <div class="col-md">
+            <img src="../img/logo.png" class="logo" alt="" style="width: 80%;height: 80%;object-fit: contain;"/>
           </div>
           <div class="col-md">
             <h6 class="text-uppercase text-warning">Sobre Nosotros</h6>
-            <ul class="mb-0 pb-2 foot-list">
-              <li class="">
-                <a class="" href="vision.html">Nuestra visión</a>
+            <ul class="mb-0 pb-2">
+              <li class="text">
+                <a class="nav-link" href="vision.html">Nuestra Visión</a>
               </li>
-              <li class="">
-                <a class="" href="#">Noticias</a>
+              <li class="text">
+                <a class="nav-link" href="#">Noticias</a>
               </li>
-              <li class="">
-                <a class="" href="#">Empleo</a>
+              <li class="text">
+                <a class="nav-link" href="#">Empleo</a>
               </li>
             </ul>
           </div>
           <div class="col-md">
             <h6 class="text-uppercase text-warning">Obtener Ayuda</h6>
-            <ul class="mb-0 pb-2 foot-list">
-              <li class="">
-                <a class="" href="#">Pedidos</a>
+            <ul class="mb-0 pb-2">
+              <li class="text">
+                <a class="nav-link" href="#">Pedidos</a>
               </li>
-              <li class="">
-                <a class="" href="#">Cambios y devoluciones</a>
+              <li class="text">
+                <a class="nav-link" href="#">Cambios y devoluciones</a>
               </li>
-              <li class="">
-                <a class="" href="#">Formas de pago</a>
+              <li class="text">
+                <a class="nav-link" href="#">Formas de pago</a>
               </li>
-              <li class="">
-                <a class="" href="contacto.html">Contáctanos</a>
+              <li class="text">
+                <a class="nav-link" href="contacto.html">Contáctanos</a>
               </li>
             </ul>
           </div>
@@ -322,19 +165,14 @@
             <i class="fab fa-twitter mx-1 text-info"></i>
             <i class="fab fa-facebook-f mx-1 text-info"></i>
             <i class="fab fa-instagram mx-1 text-info"></i>
-            <i class="fab fa-whatsapp mx-1 text-info"></i>
           </div>
-          <div class="col-8 text-right copyright font-weight-light">
-            <div>Todos los derechos reservados.</div>
+          <div class="col-8 text-right copyright">
+            Todos los derechos reservados.
           </div>
         </div>
       </div>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"

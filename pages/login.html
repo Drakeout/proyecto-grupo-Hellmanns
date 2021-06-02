@@ -1,226 +1,170 @@
 <!DOCTYPE html>
 <html lang="es">
-  <!--Metadatos-->
+<!--Metadatos-->
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- Fuerza a IE 8/9/10 a usar su último motor de renderizado -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Iniciar Sesión | ChangeWear</title>
-    <meta name="description" content="Sitio de venta online (Beta)" />
-    <link rel="icon" href="../img/cwIcon.png" type="image/png" />
-    <!-- FontAwesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../css/estilos.css" />
-    <!-- Javascript -->
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script src="../js/main.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Fuerza a IE 8/9/10 a usar su último motor de renderizado -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Iniciar Sesión | ChangeWear</title>
+  <meta name="description" content="Sitio de venta online (Beta)" />
+  <link rel="icon" href="../img/cwIcon.png" type="image/png" />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <!-- Javascript -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
 
-  <!--Inicio de la página-->
+<!--Inicio de la página-->
 
-  <body>
-    <!-- Headbar -->
-    <header class="">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <!-- Toggler del navbar -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarTogglerMain"
-          aria-controls="navbarTogglerMain"
-          aria-expanded="false"
-          aria-label="Navegación"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Marca de la página -->
-        <a
-          class="navbar-brand ml-2 ml-lg-0 mr-auto mr-lg-2"
-          href="../index.html"
-        >
-          <img src="../img/logo.png" class="logo" alt="" />
-          <span class="sr-only">(actual)</span></a
-        >
-        <!-- Los items del Navbar -->
-        <div class="collapse navbar-collapse" id="navbarTogglerMain">
-          <ul class="navbar-nav mr-auto mt-1 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="mujeres.html">Mujeres</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hombre.html">Hombres</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ninos.html">Niños</a>
-            </li>
-            <!-- Botón del usuario 1 -->
-            <li class="nav-item active d-lg-none">
-              <a class="nav-link" href="login.html">
-                <i class="fas fa-user"></i> Iniciar sesión
-              </a>
-            </li>
-            <!-- Botón del carro de compras 1 -->
-            <li class="nav-item d-lg-none">
-              <a class="nav-link" href="carro.html">
-                <i class="fas fa-shopping-cart"></i> Carro de compra
-              </a>
-            </li>
-          </ul>
-          <!--Barra de busqueda -->
-          <form class="form-inline my-0 mr-0 nav-item">
-            <input
-              class="form-control mr-0 text_area"
-              type="search"
-              placeholder="Buscar"
-              aria-label="Buscar"
-            />
-            <button class="btn btn-outline-success my-1 my-md-0" type="submit">
-              <i class="fas fa-search"></i>
-            </button>
-          </form>
-          <!-- Botón de Usuario -->
-          <div class="btn-group dropdown ml-2 d-none d-lg-block">
+<body>
+  <!-- Headbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <!-- Toggler del navbar -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerMain"
+        aria-controls="navbarTogglerMain" aria-expanded="false" aria-label="Navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Marca de la página -->
+      <a class="navbar-brand ml-2 ml-lg-0 mr-auto mr-lg-2" href="../index.html">ChangeWear</a>
+      <!-- Los items del Navbar -->
+      <div class="collapse navbar-collapse" id="navbarTogglerMain">
+        <ul class="navbar-nav mr-auto mt-1 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="mujeres.html">Mujeres</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hombre.html">Hombres</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ninos.html">Niños</a>
+          </li>
+        </ul>
+        <!--Barra de busqueda -->
+        <form class="form-inline my-0 mr-2 nav-item">
+          <input class="form-control mr-0 text_area" type="search" placeholder="Buscar" aria-label="Buscar" />
+          <button class="btn btn-outline-success my-0" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <!--Botón de iniciar sesión-->
+        <ul class="navbar-nav mt-1 mt-lg-0 ">
+          <li class="nav-item my-sm-1 mx-lg-2">
             <a class="btn btn-info" href="login.html">
               <i class="fas fa-user"></i>
             </a>
-          </div>
-          <!-- Botón del carro de compras 2-->
-          <div class="btn-group dropdown ml-2 d-none d-lg-block">
+          </li>
+          <li class="nav-item my-sm-1 mx-lg-2">
             <a class="btn btn-danger" href="carro.html">
               <i class="fas fa-shopping-cart"></i>
             </a>
-          </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <br />
+
+  <!-- Formulario -->
+  <section class="form-login ">
+    <div class="container ">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 my-sm-1 ml-md-1 border rounded">
+          <h1 class="mt-1">Iniciar sesión</h1>
+          <input class="controls" type="text" name="usuario" value="" placeholder="Usuario" />
+          <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña" />
+          <input class="buttons" type="submit" name="" value="Ingresar" />
+          <p><a href="#">¿Olvidastes tu Contraseña?</a></p>
         </div>
-      </nav>
-    </header>
-
-    <br />
-
-    <!-- Formulario -->
-    <section class="form-login main-body">
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-5 my-sm-1 ml-md-1 border rounded">
-            <h1 class="mt-1">Iniciar sesión</h1>
-            <input
-              class="controls"
-              type="text"
-              name="usuario"
-              value=""
-              placeholder="Email"
-            />
-            <input
-              class="controls"
-              type="password"
-              name="contrasena"
-              value=""
-              placeholder="Contraseña"
-            />
-            <input class="buttons" type="submit" name="" value="Ingresar" />
-            <p><a href="#">¿Olvidaste tu contraseña?</a></p>
-          </div>
-          <div class="col-lg-5 my-sm-1 ml-md-1 border rounded">
-            <div class="info">
-              <h2 class="mt-1">Cliente nuevo</h2>
-              <div class="text">
-                <p>Crear una cuenta tiene muchos beneficios:</p>
-                <p>
-                  Pago más rápido, guardar más de una dirección, ofertas
-                  exclusivas, seguimiento de pedidos y mucho más.
-                </p>
-              </div>
-              <a class="new-acc" href="registroUsuario.html">
-                <button class="buttons" type="button">
-                  Crear una cuenta
-                </button></a
-              >
-              <p class="pa"></p>
+        <div class="col-lg-5  my-sm-1 ml-md-1 border rounded">
+          <div class="info">
+            <h2 class="mt-1">Cliente Nuevo</h2>
+            <div class="text">
+              <p>Crear una cuenta tiene muchos beneficios:</p>
+              <p>
+                Pago más rápido, guardar más de una dirección, ofertas
+                exclusivas, seguimiento de pedidos y mucho más.
+              </p>
             </div>
+            <a class="new-acc" href="registroUsuario.html">
+              <button class="buttons" type="button">
+                Crear una cuenta
+              </button></a>
+            <p class="pa"></p>
           </div>
         </div>
       </div>
-    </section>
-    <br />
-    <br />
+    </div>
+  </section>
+  <br />
+  <br />
 
-    <!-- Aquí va el footer -->
-    <footer class="bg-dark text-white my-0 mx-0 pt-4 pb-2 main-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md" style="text-align: center">
-            <img src="../img/logo.png" class="logo pb-4" alt="" />
-          </div>
-          <div class="col-md">
-            <h6 class="text-uppercase text-warning">Sobre Nosotros</h6>
-            <ul class="mb-0 pb-2 foot-list">
-              <li class="">
-                <a class="" href="vision.html">Nuestra visión</a>
-              </li>
-              <li class="">
-                <a class="" href="#">Noticias</a>
-              </li>
-              <li class="">
-                <a class="" href="#">Empleo</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md">
-            <h6 class="text-uppercase text-warning">Obtener Ayuda</h6>
-            <ul class="mb-0 pb-2 foot-list">
-              <li class="">
-                <a class="" href="#">Pedidos</a>
-              </li>
-              <li class="">
-                <a class="" href="#">Cambios y devoluciones</a>
-              </li>
-              <li class="">
-                <a class="" href="#">Formas de pago</a>
-              </li>
-              <li class="">
-                <a class="" href="contacto.html">Contáctanos</a>
-              </li>
-            </ul>
-          </div>
+  <!--Footer -->
+  <footer class="bg-dark text-white my-0 mx-0 pt-4 pb-2 main-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <img src="../img/logo.png" class="logo" alt="" />
         </div>
-        <hr class="footer-hr my-2 py-0" />
-        <div class="row">
-          <div class="col-4 text-left">
-            <i class="fab fa-twitter mx-1 text-info"></i>
-            <i class="fab fa-facebook-f mx-1 text-info"></i>
-            <i class="fab fa-instagram mx-1 text-info"></i>
-            <i class="fab fa-whatsapp mx-1 text-info"></i>
-          </div>
-          <div class="col-8 text-right copyright font-weight-light">
-            <div>Todos los derechos reservados.</div>
-          </div>
+        <div class="col-md">
+          <h6 class="text-uppercase text-warning">Sobre Nosotros</h6>
+          <ul class="mb-0 pb-2">
+            <li class="text">
+              <a class="nav-link" href="vision.html">Nuestra Visión</a>
+            </li>
+            <li class="text">
+              <a class="nav-link" href="#">Noticias</a>
+            </li>
+            <li class="text">
+              <a class="nav-link" href="#">Empleo</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md">
+          <h6 class="text-uppercase text-warning">Obtener Ayuda</h6>
+          <ul class="mb-0 pb-2">
+            <li class="text">
+              <a class="nav-link" href="#">Pedidos</a>
+            </li>
+            <li class="text">
+              <a class="nav-link" href="#">Cambios y devoluciones</a>
+            </li>
+            <li class="text">
+              <a class="nav-link" href="#">Formas de pago</a>
+            </li>
+            <li class="text">
+              <a class="nav-link" href="contacto.html">Contáctanos</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <hr class="footer-hr my-2 py-0" />
+      <div class="row">
+        <div class="col-4 text-left">
+          <i class="fab fa-twitter mx-1 text-info"></i>
+          <i class="fab fa-facebook-f mx-1 text-info"></i>
+          <i class="fab fa-instagram mx-1 text-info"></i>
+        </div>
+        <div class="col-8 text-right copyright">
+          Todos los derechos reservados.
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
