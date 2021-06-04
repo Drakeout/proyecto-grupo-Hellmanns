@@ -3,11 +3,11 @@ $(document).ready(() => {
     var seccion = null;
 
     if (document.getElementById('mujer')) {
-        console.log('sii');
         seccion = `women's%20clothing`;
     } else if (document.getElementById('hombre')) {
-        console.log('Siix2');
         seccion = `men's%20clothing`;
+    } else if (document.getElementById('ninos')){
+        seccion = `electronics`;
     }
 
     var dataResult = null;
@@ -38,7 +38,10 @@ $(document).ready(() => {
         $(card).html(html);
         $(card).addClass('col mt-3');
         $(card).attr('id', id);
-        
+        $(card).click(() => {
+            sessionStorage.setItem('producto', JSON.stringify(id));
+            location.href = '../pages/producto.html';
+        });
 
         return card;
     }
@@ -57,6 +60,7 @@ $(document).ready(() => {
             );
         });
     }
+
 
 
 

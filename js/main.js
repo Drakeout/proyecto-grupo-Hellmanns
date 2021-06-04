@@ -1,5 +1,6 @@
-$(document).ready(function(){
-    console.log('Gola');
+$(document).ready(()=>{
+
 
     
+
 })
