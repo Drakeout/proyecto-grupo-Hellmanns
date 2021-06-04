@@ -27,9 +27,14 @@ $(document).ready(() => {
     $("#btnComprar").click(() => {
 
         var data = localStorage.getItem('productoCarro');
-        console.log(typeof data);
+        if (data === null) {
+            localStorage.setItem('productoCarro', JSON.stringify(dataResult.id));
 
-        localStorage.setItem('productoCarro', `${data} - ${JSON.stringify(dataResult.id)}`);
+        } else {
+            localStorage.setItem('productoCarro', `${data}-${JSON.stringify(dataResult.id)}`);
+
+        }
+
 
 
     });
