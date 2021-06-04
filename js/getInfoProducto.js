@@ -25,10 +25,16 @@ $(document).ready(() => {
     });
 
     $("#btnComprar").click(() => {
-        console.log(dataResult.id);
-        sessionStorage.setItem('productoCarro', JSON.stringify(dataResult.id));
-        location.href = '../pages/carro.html';
+
+        var data = localStorage.getItem('productoCarro');
+        console.log(typeof data);
+
+        localStorage.setItem('productoCarro', `${data} - ${JSON.stringify(dataResult.id)}`);
+
+
     });
+
+
 
 
 })
