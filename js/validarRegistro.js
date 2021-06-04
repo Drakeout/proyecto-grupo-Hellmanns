@@ -1,10 +1,10 @@
-$('formularioRegistro').validate({
-    "rules": {
+$('#formularioRegistro').validate({
+    rules: {
         "txtEmail": {
             required: true,
             email: true
         },
-        "txtContrasena": {
+        txtContrasena: {
             required: true,
             minlength: 10
         },
@@ -34,7 +34,7 @@ $('formularioRegistro').validate({
             required: 'El email es un campo obligatorio',
             email: 'Por favor ingrese un email valido'
         },
-        "txtContrasena": {
+        txtContrasena: {
             required: 'La contraseña es un campo obligatorio',
             minlength: 'La contraseña debe tener un minimo de 10 caracteres'
         },
@@ -57,7 +57,8 @@ $('formularioRegistro').validate({
         },
         "selectRegion": {
             required: 'Por favor seleccione una región'
-        }
-
+        },
+        errorClass: "error fail-alert",
+        validClass: "valid success-alert",
     }
 })
