@@ -23,14 +23,15 @@
 <body>
   <!-- Headbar -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
       <!-- Toggler del navbar -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerMain"
         aria-controls="navbarTogglerMain" aria-expanded="false" aria-label="Navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Marca de la página -->
-      <a class="navbar-brand ml-2 ml-lg-0 mr-auto mr-lg-2" href="../index.html">ChangeWear</a>
+      <a class="navbar-brand ml-2 ml-lg-0 mr-auto mr-lg-2" href="../index.html">ChangeWear<span
+          class="sr-only">(actual)</span></a>
       <!-- Los items del Navbar -->
       <div class="collapse navbar-collapse" id="navbarTogglerMain">
         <ul class="navbar-nav mr-auto mt-1 mt-lg-0">
@@ -44,26 +45,33 @@
             <a class="nav-link" href="ninos.html">Niños</a>
           </li>
         </ul>
-        <!--Barra de busqueda -->
-        <form class="form-inline my-0 mr-2 nav-item">
-          <input class="form-control mr-0 text_area" type="search" placeholder="Buscar" aria-label="Buscar" />
-          <button class="btn btn-outline-success my-0" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </form>
-        <!--Botón de iniciar sesión-->
         <ul class="navbar-nav mt-1 mt-lg-0 ">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarCarrito" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg-left" aria-labelledby="navbarCarrito">
+              <div id="carritoNavbar" class="p-3">
+                <a class="dropdown-item" href="#">Sin productos...</a>
+              </div>
+              <div class="dropdown-divider"></div>
+              <a class="btn btn-dark mx-2" role="button" href="carro.html">Ver carro</a>
+            </div>
+          </li>
           <li class="nav-item my-sm-1 mx-lg-2">
             <a class="btn btn-info" href="login.html">
               <i class="fas fa-user"></i>
             </a>
           </li>
-          <li class="nav-item my-sm-1 mx-lg-2">
-            <a class="btn btn-danger" href="carro.html">
-              <i class="fas fa-shopping-cart"></i>
-            </a>
-          </li>
         </ul>
+        <!--Barra de busqueda -->
+        <form class="form-inline my-0 mr-0 nav-item">
+          <input class="form-control mr-0 text_area" type="search" placeholder="Buscar" aria-label="Buscar" />
+          <button class="btn btn-outline-success my-1 my-md-0" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
       </div>
     </nav>
   </header>
@@ -89,25 +97,31 @@
                 <!--Formulario Columna 1-->
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" name="txtNombre" required="" id="id_nombre" placeholder="Nombre *" />
+                    <input type="text" class="form-control" name="txtNombre" required="" id="id_nombre"
+                      placeholder="Nombre *" />
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" name="txtApellido" required="" id="id_apellido" placeholder="Apellido *" />
+                    <input type="text" class="form-control" name="txtApellido" required="" id="id_apellido"
+                      placeholder="Apellido *" />
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control" name="txtContrasena" required="" id="id_contrasena" placeholder="Contraseña *" />
+                    <input type="password" class="form-control" name="txtContrasena" required="" id="id_contrasena"
+                      placeholder="Contraseña *" />
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control" name="txtConfirmarContrasena" required="" id="id_confirmarcontrasena" placeholder="Confirmar Contraseña *" />
+                    <input type="password" class="form-control" name="txtConfirmarContrasena" required=""
+                      id="id_confirmarcontrasena" placeholder="Confirmar Contraseña *" />
                   </div>
                 </div>
                 <!--Formulario Columna 2-->
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="email" class="form-control" name="txtEmail" required="" id="id_email" placeholder="Correo Electrónico *" />
+                    <input type="email" class="form-control" name="txtEmail" required="" id="id_email"
+                      placeholder="Correo Electrónico *" />
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" name="txtFono" required="" id="id_fono" placeholder="Teléfono *" />
+                    <input type="text" class="form-control" name="txtFono" required="" id="id_fono"
+                      placeholder="Teléfono *" />
                   </div>
                   <!--Barra de Opciones: Regiones-->
                   <div class="form-group">
@@ -134,7 +148,8 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" name="txtDireccion" required="" id="id_direccion" placeholder="Dirección *" />
+                    <input type="text" class="form-control" name="txtDireccion" required="" id="id_direccion"
+                      placeholder="Dirección *" />
                   </div>
                   <!-- Incluir un Pop-up y checkbox para los terminos de servicio, y un captcha? -->
                   <!--Boton de Confirmacion-->
@@ -210,6 +225,8 @@
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
+  <script type="module" src="../js/getCarroNavbar.js"></script>
+  <script type="module" src="../js/refresCarro.js"></script>
 </body>
 
 </html>

@@ -21,49 +21,57 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
       <!-- Toggler del navbar -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerMain"
-        aria-controls="navbarTogglerMain" aria-expanded="false" aria-label="Navegación">
-        <span class="navbar-toggler-icon"></span>
+          aria-controls="navbarTogglerMain" aria-expanded="false" aria-label="Navegación">
+          <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Marca de la página -->
-      <a class="navbar-brand ml-2 ml-lg-0 mr-auto mr-lg-2" href="../index.html">ChangeWear</a>
+      <a class="navbar-brand ml-2 ml-lg-0 mr-auto mr-lg-2" href="../index.html">ChangeWear<span
+              class="sr-only">(actual)</span></a>
       <!-- Los items del Navbar -->
       <div class="collapse navbar-collapse" id="navbarTogglerMain">
-        <ul class="navbar-nav mr-auto mt-1 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="mujeres.html">Mujeres</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="hombre.html">Hombres</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="ninos.html">Niños<span class="sr-only">(actual)</span></a>
-          </li>
-        </ul>
-        <!--Barra de busqueda -->
-        <form class="form-inline my-0 mr-2 nav-item">
-          <input class="form-control mr-0 text_area" type="search" placeholder="Buscar" aria-label="Buscar" />
-          <button class="btn btn-outline-success my-0" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </form>
-        <!--Botón de iniciar sesión-->
-        <ul class="navbar-nav mt-1 mt-lg-0 ">
-          <li class="nav-item my-sm-1 mx-lg-2">
-            <a class="btn btn-info" href="login.html">
-              <i class="fas fa-user"></i>
-            </a>
-          </li>
-          <li class="nav-item my-sm-1 mx-lg-2">
-            <a class="btn btn-danger" href="carro.html">
-              <i class="fas fa-shopping-cart"></i>
-            </a>
-          </li>
-        </ul>
+          <ul class="navbar-nav mr-auto mt-1 mt-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link" href="mujeres.html">Mujeres</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="hombre.html">Hombres</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="ninos.html">Niños</a>
+              </li>
+          </ul>
+          <ul class="navbar-nav mt-1 mt-lg-0 ">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarCarrito" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-shopping-cart"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-lg-left" aria-labelledby="navbarCarrito">
+                      <div id="carritoNavbar" class="p-3">
+                          <a class="dropdown-item" href="#">Sin productos...</a>
+                      </div>
+                      <div class="dropdown-divider"></div>
+                      <a class="btn btn-dark mx-2" role="button" href="carro.html">Ver carro</a>
+                  </div>
+              </li>
+              <li class="nav-item my-sm-1 mx-lg-2">
+                  <a class="btn btn-info" href="login.html">
+                      <i class="fas fa-user"></i>
+                  </a>
+              </li>
+          </ul>
+          <!--Barra de busqueda -->
+          <form class="form-inline my-0 mr-0 nav-item">
+              <input class="form-control mr-0 text_area" type="search" placeholder="Buscar" aria-label="Buscar" />
+              <button class="btn btn-outline-success my-1 my-md-0" type="submit">
+                  <i class="fas fa-search"></i>
+              </button>
+          </form>
       </div>
-    </nav>
+  </nav>
   </header>
   <main id="ninos">
     <section class="pt-1 pb-5">
@@ -142,6 +150,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
   <script src="../js/getProductos.js"></script>
+  <script type="module" src="../js/getCarroNavbar.js"></script>
+  <script type="module" src="../js/refresCarro.js"></script>
 </body>
 
 </html>

@@ -334,8 +334,8 @@ ul.nolist {
 }
 .logo {
   width: 80%;
-  height: 80%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 769px) {
@@ -392,3 +392,8 @@ ul.nolist {
   text-transform: capitalize;
 }
 
+@media screen and (min-width: 992px) {
+  .dropdown-menu{
+    width: 360px;
+  }
+}

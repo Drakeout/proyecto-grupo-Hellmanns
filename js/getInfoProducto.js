@@ -1,3 +1,4 @@
+import refreshCarro from './refresCarro.js';
 $(document).ready(() => {
 
     var dataResult = null;
@@ -34,9 +35,7 @@ $(document).ready(() => {
             localStorage.setItem('productoCarro', `${data}-${JSON.stringify(dataResult.id)}`);
 
         }
-
-
-
+        refreshCarro();
     });
 
 

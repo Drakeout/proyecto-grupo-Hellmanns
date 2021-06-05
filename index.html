@@ -45,6 +45,26 @@
             <a class="nav-link" href="pages/ninos.html">Niños</a>
           </li>
         </ul>
+        <ul class="navbar-nav mt-1 mt-lg-0 ">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarCarrito" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg-left" aria-labelledby="navbarCarrito">
+              <div id="carritoNavbar" class="p-3">
+                <a class="dropdown-item" href="#">Sin productos...</a>
+              </div>
+              <div class="dropdown-divider"></div>
+              <a class="btn btn-dark mx-2" role="button" href="pages/carro.html">Ver Carro</a>
+            </div>
+          </li>
+          <li class="nav-item my-sm-1 mx-lg-2">
+            <a class="btn btn-info" href="pages/login.html">
+              <i class="fas fa-user"></i>
+            </a>
+          </li>
+        </ul>
         <!--Barra de busqueda -->
         <form class="form-inline my-0 mr-0 nav-item">
           <input class="form-control mr-0 text_area" type="search" placeholder="Buscar" aria-label="Buscar" />
@@ -52,20 +72,6 @@
             <i class="fas fa-search"></i>
           </button>
         </form>
-        <ul class="navbar-nav mt-1 mt-lg-0 ">
-          <li class="nav-item my-sm-1 mx-lg-2">
-            <a class="btn btn-info" href="pages/login.html">
-              <i class="fas fa-user"></i>
-            </a>
-          </li>
-          <li class="nav-item my-sm-1 mx-lg-2">
-            <a class="btn btn-danger" href="pages/carro.html">
-              <i class="fas fa-shopping-cart"></i>
-            </a>
-          </li>
-        </ul>
-
-      </div>
       </div>
     </nav>
   </header>
@@ -364,7 +370,11 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
 
-  <script src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/getCarroNavbar.js"></script>
+  <script type="module" src="/js/refresCarro.js"></script>
+
+
 </body>
 
 </html>
