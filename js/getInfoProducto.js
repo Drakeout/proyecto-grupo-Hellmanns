@@ -39,10 +39,7 @@ $(document).ready(() => {
     });
 
 
-
+    $('#volver').click(()=>window.history.back())
 
 })
 
-function volver() {
-    window.history.back();
-}

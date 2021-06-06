@@ -21,14 +21,12 @@ const refreshCarro = () => {
 
     const mostrarProducto = (title, price) => {
 
-        var html = `<a class="dropdown-item" href="#">${title}  ${price}</a>`;
-
-        var html2 = `
+         var html2 = `
         <div class="d-flex justify-content-between">
             <p>${title}</p>
             <p>$${price}</p>
         </div>
-    `;
+        `;
         $("#carritoNavbar").append(html2);
     };
 
