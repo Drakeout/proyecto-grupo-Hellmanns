@@ -32,7 +32,7 @@ $('#formularioRegistro').validate({
     messages: {
         "txtEmail": {
             required: 'El email es un campo obligatorio',
-            email: 'Por favor ingrese un email valido'
+            email: 'Por favor ingrese un email válido'
         },
         txtContrasena: {
             required: 'La contraseña es un campo obligatorio',
