@@ -21,13 +21,24 @@ const refreshCarro = () => {
 
     const mostrarProducto = (title, price) => {
 
+        if (dataResult.title.empty && dataResult.price.empty ) {
+           
          var html2 = `
-        <div class="d-flex justify-content-between">
-            <p>${title}</p>
-            <p>$${price}</p>
-        </div>
-        `;
+         <div class="d-flex justify-content-between">
+            <p>TEST</p>
+         </div>
+         `;
+         
+        } else {
+            var html2 = `
+            <div class="d-flex justify-content-between">    
+                <p>${title}</p>
+                <p>$ ${price}</p>
+            </div>
+            `;                 
+        }
         $("#carritoNavbar").append(html2);
+
     };
 
     split.forEach(element => {
