@@ -1,0 +1,399 @@
+/* IMPORTACIONES */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* GENERALES */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.new-cli {
+  width: 80%;
+  height: 20%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  padding: 20px 30px;
+  border: solid 1px darkgray;
+  color: black;
+}
+.new-cli h2 {
+  margin: 0;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid;
+  font-size: 20px;
+}
+.pa {
+  height: 30px;
+  text-align: left;
+  border-bottom: 1px solid;
+}
+
+.new-cli p {
+  height: 40px;
+  text-align: left;
+}
+
+.new-cli a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  padding: 20px 30px;
+  border: solid 1px darkgray;
+  color: black;
+}
+
+.login h1 {
+  margin: 0;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid;
+  font-size: 20px;
+}
+
+.controls {
+  width: 100%;
+  border: 1px solid #017bab;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  background: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.buttons {
+  width: 100%;
+  height: 40px;
+  background: #017bab;
+  border: none;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.login p {
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
+.login a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+/* OVERRIDE EL TEXTAREA DE BOOTSTRAP PARA EL SEARCH */
+@media (max-width: 991px) {
+  .text_area {
+    display: inline-block;
+    width: calc(100% - 42px) !important;
+    vertical-align: middle;
+  }
+}
+
+/* Listas */
+ul.nolist {
+  list-style-type: none;
+}
+
+/* Altura mínima página */
+.main-body {
+  height: 1000px;
+}
+
+.footer-hr {
+  border-top: 1px solid DarkGray;
+}
+
+/* Tamaño iconos footer */
+.main-footer .fab {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+/* Los que habían */
+
+.main-header {
+  padding: 0 20px;
+}
+.main-header_title {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 10px 0;
+  color: #454546;
+}
+.main-nav {
+  display: none;
+}
+.main-header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-menu {
+  font-size: 1.5em;
+  border: 1px solid #454546;
+  display: block;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.main-header_btn {
+  display: block;
+  padding: 10px 25px;
+  color: #454546;
+  border: 1px solid #454546;
+  text-decoration: none;
+}
+.main-header_input {
+  display: block;
+  padding: 10px;
+}
+
+.slideshow {
+  width: 100%;
+  position: relative;
+}
+
+.slider li {
+  overflow: hidden;
+}
+
+.slider li img {
+  width: 100%;
+}
+
+.slider .caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: black;
+  z-index: 1;
+}
+
+.slider .caption h1 {
+  font-size: 50px;
+}
+
+.slider .caption p {
+  font-size: 50px;
+}
+
+.pagination {
+  position: absolute;
+  top: 102%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.pagination li {
+  font-size: 20px;
+  margin: 2px 5px;
+  color: black;
+  cursor: pointer;
+}
+
+.left,
+.right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 35px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.nav-link {
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .slider .caption p {
+    display: none;
+  }
+
+  .slider .caption h1 {
+    font-size: 35px;
+  }
+
+  .left,
+  .right {
+    font-size: 30px;
+  }
+
+  .slider li img {
+    width: 600px;
+  }
+
+  .pagination {
+    display: none;
+  }
+}
+
+/* Estilos carousel */
+.carousel-item {
+  max-height: 350px;
+}
+
+@media screen and (min-width: 1200px) {
+  .carousel-item {
+    max-width: auto;
+  }
+}
+
+.carousel-caption {
+  background-color: white;
+  opacity: 0.4;
+  color: black;
+}
+
+.card-deck {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.card-img {
+  width: 100%;
+  height: 35vw;
+  object-fit: cover;
+}
+
+
+.linkCatalogo,
+.entrega {
+  color: inherit;
+}
+
+.linkCatalogo:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.producto {
+  color: inherit;
+}
+
+.producto:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.fa-plus-square {
+  font-size: 20px;
+}
+
+.catalogo {
+  max-width: 240px;
+}
+
+@media screen and (max-width: 768px) {
+  .catalogo {
+    max-width: none;
+  }
+}
+
+
+.img-us {
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+}
+.logo {
+  width: 80%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 769px) {
+  .img-us{
+    height: 35vw;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.contacto-form{  
+  width: 500px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #fbfbfb;
+}
+.formulario{
+  padding: 1%;
+}
+
+.mensaje {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #017bab;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  background: white;
+  font-size: 14px;
+  font-weight: bold;
+  resize: none;
+}
+.formulario h1 {
+  margin: 0;
+  text-align: left;
+  height: 40px;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.formulario p{
+    width: 100%;
+    text-align: left;
+    font-size: 14px; 
+    font-weight: bold;
+  }
+
+#imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#titulo, #categoria, #descripcion{
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 992px) {
+  .dropdown-menu{
+    width: 370px;
+  }
+}
