@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
   <div class="container-fluid">
     <!-- Marca de la página -->
-  <a class="navbar-brand ml-2 ml-lg-0 mr-auto mr-lg-2" href="#">ChangeWear<span
+  <a class="navbar-brand ml-2 ml-lg-0 mr-auto mr-lg-2" href="{% url 'home_page' %}">ChangeWear<span
     class="sr-only">(actual)</span></a>
   
   <!-- Toggler del navbar -->
@@ -13,13 +13,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link" href="#">Mujeres</a>
+        <a class="nav-link" href="{% url 'mujer_page'%}">Mujeres</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Hombres</a>
+        <a class="nav-link" href="{% url 'hombre_page'%}">Hombres</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Niños</a>
+        <a class="nav-link" href="{% url 'nino_page'%}">Niños</a>
       </li>
     </ul>
     <ul class="navbar-nav mt-1 mt-lg-0 ">
