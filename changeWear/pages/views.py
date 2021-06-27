@@ -1,6 +1,6 @@
 from django.contrib.auth.models import Group
 from django.core.checks import messages
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.http import HttpResponse, JsonResponse
 from core.models import *
 from core.forms import *
@@ -13,36 +13,96 @@ import json
 # Create your views here.
 
 def home_page(request):
+    context = {}
+    try:
+        cliente = request.user.cliente
+        compra, creada = Compra.objects.get_or_create(cliente=cliente, completado=False)
+        items = compra.productocompra_set.all()
+        carro = compra.get_comprar_productos
+        context['carro'] = carro
+        context['items'] = items
+    except:
+        carro = None
+        items = None
     
 
-    context = {}
+    
     return render(request, 'pages/home.html', context)
 
     
 def mujer_page(request):
     productos = Producto.objects.all().filter(categoria='MJ')
-    context = {'productos': productos}
+
+    context = {}
+    try:
+        cliente = request.user.cliente
+        compra, creada = Compra.objects.get_or_create(cliente=cliente, completado=False)
+        items = compra.productocompra_set.all()
+        carro = compra.get_comprar_productos
+        context['carro'] = carro
+        context['items'] = items
+    except:
+        carro = None
+        items = None
+
+    context['productos'] = productos
     context['nombre'] = 'Mujer'
 
     return render(request, 'pages/categoria.html', context)
 
 def hombre_page(request):
     productos = Producto.objects.all().filter(categoria='HM')
-    context = {'productos': productos}
+    context = {}
+    try:
+        cliente = request.user.cliente
+        compra, creada = Compra.objects.get_or_create(cliente=cliente, completado=False)
+        items = compra.productocompra_set.all()
+        carro = compra.get_comprar_productos
+        context['carro'] = carro
+        context['items'] = items
+    except:
+        carro = None
+        items = None
+
+    context['productos'] = productos
     context['nombre'] = 'Hombre'
 
     return render(request, 'pages/categoria.html', context)
 
 def nino_page(request):
     productos = Producto.objects.all().filter(categoria='NN')
-    context = {'productos': productos}
+    context = {}
+    try:
+        cliente = request.user.cliente
+        compra, creada = Compra.objects.get_or_create(cliente=cliente, completado=False)
+        items = compra.productocompra_set.all()
+        carro = compra.get_comprar_productos
+        context['carro'] = carro
+        context['items'] = items
+    except:
+        carro = None
+        items = None
+
+    context['productos'] = productos
     context['nombre'] = 'Niños'
 
     return render(request, 'pages/categoria.html', context)
 
 def producto_page(request, pk):
+    context = {}
+    try:
+        cliente = request.user.cliente
+        compra, creada = Compra.objects.get_or_create(cliente=cliente, completado=False)
+        items = compra.productocompra_set.all()
+        carro = compra.get_comprar_productos
+        context['carro'] = carro
+        context['items'] = items
+    except:
+        carro = None
+        items = None
+
     producto = Producto.objects.get(id=pk)
-    context = {'producto':producto}
+    context['producto'] = producto
     return render(request, 'pages/producto.html', context)
 
 # Clientes
@@ -75,6 +135,26 @@ def registrarse_page(request):
     context = {'formUser': form1, 'formCliente': form2}
     return render(request, 'pages/register.html', context)
 
+def login_page(request):
+    context = {}
+
+    if request.method == 'POST':
+        correo = request.POST.get('email')
+        password = request.POST.get('password')
+
+        usuario = User.objects.get(email=correo)
+        print(usuario.username)
+
+        user = authenticate(request, username=usuario.username, password=password)
+
+        if user is not None:
+            login(request, user)
+            return redirect('home_page')
+        else:
+            messages.error(request, 'Usuario o contraseña incorrecto')
+
+
+    return render(request, 'pages/login.html', context)
 
 
 #TO-DO: Agregar condición para logeado y para clientes con decoradores
@@ -84,8 +164,15 @@ def carro_page(request):
     cliente = request.user.cliente
     compra, creada = Compra.objects.get_or_create(cliente=cliente, completado=False)
     items = compra.productocompra_set.all()
+    try:
+        cliente = request.user.cliente
+        compra, creada = Compra.objects.get_or_create(cliente=cliente, completado=False)
+        items = compra.productocompra_set.all()
+        carro = compra.get_comprar_productos
+    except:
+        carro = None
     
-    context = {'items': items, 'compra': compra}
+    context = {'items': items, 'compra': compra, 'carro':carro}
     return render(request, 'pages/carro.html', context)
 
 def pagar_page(request):
@@ -104,5 +191,22 @@ def updateItem(request):
     action = data['action']
 
     print(productoId, action)
+
+    cliente = request.user.cliente
+    producto = Producto.objects.get(id=productoId)
+    compra, creada = Compra.objects.get_or_create(cliente=cliente, completado=False)
+
+    productoCompra, creada = ProductoCompra.objects.get_or_create(compra=compra, producto=producto)
+
+    if action == 'add':
+        productoCompra.cantidad = (productoCompra.cantidad + 1)
+    elif action == 'remove':
+        productoCompra.cantidad = (productoCompra.cantidad - 1)
+
+    productoCompra.save()
+
+    if productoCompra.cantidad <= 0:
+        productoCompra.delete() 
+
     return JsonResponse('Item fue añadido', safe=False)
 

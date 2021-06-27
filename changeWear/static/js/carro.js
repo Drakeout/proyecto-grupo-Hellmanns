@@ -32,5 +32,6 @@ function updateUserCompra(productoId, action){
     
     .then((data)=>{
         console.log('data:', data);
+        location.reload();
     })
 }
