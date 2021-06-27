@@ -24,7 +24,12 @@ urlpatterns = [
     path('mujer/', mujer_page, name='mujer_page'),
     path('hombre/', hombre_page, name='hombre_page'),
     path('ninos/', nino_page,name='nino_page'),
+    path('producto/<str:pk>/', producto_page, name='producto_page'),
 
+    path('carro/', carro_page, name='carro_page'),
+    path('pagar/', pagar_page, name='pagar_page'),
+    path('registrarse/', registrarse_page, name='registrarse_page'),
+    path('update_item/', updateItem, name='update_item'),
 
     path('admin/', admin.site.urls),
 
