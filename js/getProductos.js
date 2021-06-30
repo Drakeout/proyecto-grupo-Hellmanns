@@ -13,12 +13,13 @@ $(document).ready(() => {
     var dataResult = null;
 
     $.ajax({
-        type: 'GET',
-        url: `https://fakestoreapi.com/products/category/${seccion}`,
+        
+        url: `http://127.0.0.1:8000/api/productos`,
         dataType: 'json'
     }).done((data) => {
         dataResult = data;
-        mostrarProductos();
+        print(data)
+        mostrarProductos(dataResult);
 
     });
 
@@ -46,15 +47,15 @@ $(document).ready(() => {
         return card;
     }
 
-    const mostrarProductos = () => {
+    const mostrarProductos = (dataResult) => {
         $("#productos").empty();
         dataResult.map(producto => {
             $("#productos").append(
                 tarjetaProducto(
-                    producto.title,
-                    producto.image,
-                    producto.price,
-                    producto.description,
+                    producto.titulo,
+                    producto.imagen,
+                    producto.precio,
+                    producto.descripcion,
                     producto.id
                 )
             );
